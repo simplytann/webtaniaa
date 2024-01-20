@@ -1,0 +1,112 @@
+<html>
+<title>Jenis Kulit Wajah Manusia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+<div class="w3-container w3-center w3-animate-opacity" style="background-color:black" >
+ <img src="bekind.jpg" style="width:100%">
+</div>
+<div class="w3-bar w3-pale-red">
+ <button class="w3-bar-item w3-button" onclick="openKulit('Normal')">Kulit Wajah Normal</button>
+ <button class="w3-bar-item w3-button" onclick="openKulit('Kering')">Kulit Wajah Kering</button>
+ <button class="w3-bar-item w3-button" onclick="openKulit('Kombi')">Kulit Wajah Kombinasi</button>
+ <button class="w3-bar-item w3-button" onclick="openKulit('Berminyak')">Kulit Wajah Berminyak</button>
+ <button class="w3-bar-item w3-button" onclick="openKulit('Sensi')">Kulit Wajah Sensitif</button>
+</div>
+
+<div id="Normal" class="w3-container Kulit w3-animate-top" style="display:none">
+        <h2>Kulit Wajah Normal</h2>
+        <img src="NormalSkin.jpg" class="w3-left w3-margin-right w3-circle" style="width:400px" alt="">
+		<p>
+		Kulit wajah dikatakan normal kalau secara kasat mata tidak terlihat berminyak, kering atau sensitif.
+		<br>
+		Jenis kulit ini menghasilkan cukup sebum untuk menjaga kulit tetap hidrasi tanpa membuatnya berminyak.
+		<br>
+		Kamu dapat mengetahui kulit wajah kamu normal jika:
+		<br>
+		1. Tidak ada atau sedikit spot di wajah
+		<br>
+		2. Tidak ada sensitivitas yang tinggi di wajah
+		<br>
+		3. Pori-pori yang tidak terlalu terlihat
+		<br>
+		4. Kulit wajah bercahaya
+		</p>
+</div>
+<div id="Kering" class="w3-container Kulit w3-animate-bottom" style="display:none">
+        <h2>Kulit Wajah Kering</h2>
+        <img src="DrySkin.jpg" class="w3-left w3-margin-right w3-circle" style="width:400px" alt="">
+		<p>
+		Untuk wajah kering, maka kulit kamu akan menghasilkan sebum kurang dari yang dibutuhkannya.
+		<br>
+		Kamu dapat mengetahui kulit wajah kamu kering jika:
+		<br>
+		1. Kulit akan terasa kencang atau kering, terutama setelah mandi atau berenang
+		<br>
+		2. Gatal, pecah-pecah pada kulit
+		<br>
+		3. Kulit terasa kusam, kasar dan pucat
+		<br>
+		4. Kulit kurang elastis dan terlihat guratan pada Kulit
+		<br>
+		5. Pori pori kulit hampir tidak terlihat
+		</p>
+</div>
+<div id="Kombi" class="w3-container Kulit w3-animate-left" style="display:none">
+        <h2>Kulit Wajah Kombinasi</h2>
+        <img src="Combi.jpg" class="w3-left w3-margin-right w3-circle" style="width:400px" alt="">
+		<p>
+		Memiliki kulit wajah kombinasi artinya beberapa area dari kulit ada yang berminyak dan sebagian justru kering.
+		Area yang mudah berminyak berada di kening, hidung dan dagu. Area ini juga disebut dengan T-zone. 
+		Sementara pipi dan area lain akan terasa normal atau kering.
+		Banyak orang yang memiliki jenis kulit wajah yang satu ini. Masing-masing area wajah dengan kulit kombinasi ini memiliki cara perawatan yang berbeda-beda.
+		Dengan kulit kombinasi, kamu biasanya akan memiliki pori-pori yang lebih besar dari kondisi normal. 
+		</p>
+</div>
+<div id="Berminyak" class="w3-container Kulit w3-animate-right" style="display:none">
+        <h2>Kulit Wajah Berminyak</h2>
+        <img src="OilySkin.jpg" class="w3-left w3-margin-right w3-circle" style="width:400px" alt="">
+		<p>
+		Jika kamu memiliki jenis kulit wajah yang berminyak, kondisi ini disebabkan oleh produksi sebum yang berlebihan, melebihi yang sebenarnya dibutuhkan kulit.
+		Dengan kulit wajah yang berminyak, maka kamu akan merasakan hal berikut ini:
+		<br>
+		1. Kulit terasa berminyak dan berlemak
+		<br>
+		2. Terlihat mengilap, terutama di bagian hidung dan kening
+		<br>
+		3. Memiliki pori-pori yang besar dan mudah tersumbat
+		<br>
+		4. Mudah berjerawat atau komedo
+		<br>
+		Jenis kulit ini akan semakin parah karena beberapa faktor. 
+		Misalnya cuaca yang terlalu panas dan terlalu lembap, masa pubertas atau hormon yang tidak seimbang hingga stres.
+		</p>
+</div>
+<div id="Sensi" class="w3-container Kulit w3-animate-zoom" style="display:none">
+        <h2>Kulit Wajah Sensitif</h2>
+        <img src="SensitiveSkin.jpg" class="w3-left w3-margin-right w3-circle" style="width:400px" alt="">
+		<p>
+		Kulit sensitif sebenarnya bukan termasuk jenis kulit wajah, seseorang dikatakan memiliki kulit sensitif karena gejala yang ditimbulkan berbagai faktor di wajah. 
+		Salah satu gejalanya adalah wajah mudah inflamasi atau meradang. 
+		Kamu pun bisa mengalami hal berikut ini:
+		<br>
+		1. Kulit yang terbakar, terasa pedih atau gatal saat kamu aplikasikan produk tertentu
+		<br>
+		2. Reaksi berupa bentol, gatal-gatal hingga mengelupas saat ada kontak dengan substansi tertentu		
+</div>
+</div>
+
+
+<script>
+        function openKulit(Kulit) 
+		{
+            var i;
+            var x = document.getElementsByClassName("Kulit");
+            for (i = 0; i < x.length; i++) 
+			{
+            x[i].style.display = "none";
+            }
+            document.getElementById(Kulit).style.display = "block";
+        }
+    </script>
